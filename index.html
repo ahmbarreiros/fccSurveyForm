@@ -13,7 +13,16 @@
     <label>Name <input type="text" name="name" id="name"></label>
     <label>Email <input type="text" name="email" id="email"></label>
     <label>Age <p>(optional)</p> <input type="text" name="age" id="age"></label>
-    <label>Which option best describes your current role? <select></select></label>
+    <label>Which option best describes your current role? 
+     <select name="roleSelection">
+      <option value="" name="selectRole">Select current role</option>
+      <option value="1" name="studentRole">Student</option>
+      <option value="2" name="ftJobRole">Full Time Job</option>
+      <option value="3" name="ftLearnerRole">Full Time Learner</option>
+      <option value="4" name="notSayRole">Prefer not to say</option>
+      <option value="5" name="otherRole">Other</option>
+     </select>
+    </label>
    </fieldset>
    <fieldset></fieldset>
    <fieldset></fieldset>

@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
- box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
 }
 
 body {
+ box-sizing: border-box;
  width: 100%;
  height: 100vh;
  margin: 0;
@@ -19,44 +22,110 @@ body {
  color: #fff;
  font-family: 'Poppins', sans-serif;
  text-align: center;
+ border-radius: 5px;
 }
 
 .hInt {
- margin-top: 1.5em;
- margin-bottom: 0.3em;
+ margin-top: 1.45em;
+ margin-bottom: 0.05em;
  font-size: 2rem;
+ font-weight: 400;
 }
 
 .pInt {
  margin-top: 0;
  color: rgba(255, 255, 255, 0.781);
- font-size: 1.2rem;
+ font-size: 1.113rem;
 }
 
 .form {
- background-color: rgba(25, 20, 70, 0.753);
+ background-color: rgba(14, 11, 39, 0.753);
  color: #fff;
+ min-width: 300px;
+ max-width: 700px;
+ align-self: center;
+ border-radius: 5px;
+ margin-top: 950px;
+ position: relative;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
 }
 
 fieldset {
  border: none;
- font-size: 1.15rem;
- font-family: sans-serif;
+ font-size: 1.125rem;
+ font-family: 'Poppins', sans-serif;
  padding: 5%;
  padding-top: 7%;
+ overflow: hidden;
 }
 
 input[type="text"] {
- height: 2.6rem;
+ height: 2.26rem;
  display: block;
  width: 100%;
- margin-top: 0.6em;
- margin-bottom: 1.8rem;
+ margin-top: 0.4em;
+ margin-bottom: 1.7rem;
+ border-radius: 7px;
 }
 
 .minimal {
  display: inline;
- font-size: 16px;
- color: rgba(255, 255, 255, 0.808)
+ font-size: 14px;
+ color: rgba(255, 255, 255, 0.808);
+ vertical-align: auto;
 }
 
+select[name='roleSelection'] {
+  display: block;
+  height: 2.5rem;
+  width: 100%;
+  margin-bottom: 1.75rem;
+}
+
+input[type='radio'] {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1.7rem;
+}
+
+select[name='featureSelection'] {
+  display: block;
+  height: 2.5rem;
+  width: 100%;
+  margin-bottom: 1.75rem;
+}
+
+input::placeholder, select, textarea::placeholder{
+  height: 2.6rem;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+select {
+  color: grey;
+  border-radius: 5px;
+}
+
+input[name="improve"] {
+  display: block;
+  margin-bottom: 1.75rem;
+}
+
+
+input[type="submit"] {
+  display: block;
+  background-color: #37af65;
+  color: #fff;
+  border: 1px solid #37af65;
+  width: 100%;
+  height: 2.6rem;
+  margin-top: 1.5rem;
+  font-size: 0.996rem;
+  margin-bottom: 5%;
+}
+
+textarea {
+  width: 100%;
+}

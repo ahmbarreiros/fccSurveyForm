@@ -62,7 +62,7 @@ fieldset {
  overflow: hidden;
 }
 
-input[type="text"] {
+input[type="text"], input[type='number'], input[type='email'] {
  height: 2.26rem;
  display: block;
  width: 100%;

@@ -27,12 +27,18 @@
        <option value="5" name="otherRole">Other</option>
       </select>
      </label>
-     <label class="recommendation">Would you recommend freeCodeCamp to a friend? 
-      <label for="definitely"><input type="radio" name="recommend" id="definitely"> Definitely</label>
-      <label for="maybe"><input type="radio" name="recommend" id="maybe"> Maybe</label>
-      <label for="notSure"><input type="radio" name="recommend" id="notSure"> Not Sure</label>
+     <label><p>Would you recommend freeCodeCamp to a friend?</p> 
+      <label for="definitely">
+        <input type="radio" name="recommend" id="definitely" value="r1"> Definitely
+      </label>
+      <label for="maybe">
+        <input type="radio" name="recommend" id="maybe" value="r2"> Maybe
+      </label>
+      <label for="notSure">
+        <input type="radio" name="recommend" id="notSure" value="r3"> Not Sure
+      </label>
      </label>
-     <label> What is your favorite feature of freeCodeCamp?
+     <label class="newLine"> What is your favorite feature of freeCodeCamp?
       <select name="featureSelection">
        <option value="" name="selectFeature">Select an option</option>
        <option value="1" name="challengesFeature">Challenges</option>
@@ -42,21 +48,44 @@
       </select>
     </label>
     <label> What would you like to see improved? <p class="minimal"> (Check all that apply)</p>
-     <input type="checkbox" name="improve" id="frontend"> Frond-end Projects
-     <input type="checkbox" name="improve" id="backend"> Back-end Projects
-     <input type="checkbox" name="improve" id="dataview"> Data Visualization
-     <input type="checkbox" name="improve" id="challenges"> Challenges
-     <input type="checkbox" name="improve" id="openSrcCommunity"> Open Source Community
-     <input type="checkbox" name="improve" id="gitterHelp"> Gitter help rooms
-     <input type="checkbox" name="improve" id="videos"> Videos
-     <input type="checkbox" name="improve" id="meetups"> City Meetups
-     <input type="checkbox" name="improve" id="wiki"> Wiki
-     <input type="checkbox" name="improve" id="forum"> Forum
-     <input type="checkbox" name="improve" id="addCourses"> Additional Courses
-    </label>
-     <label> Any comments or suggestions?
-      <textarea name="comment" id="comment" cols="100" rows="6" placeholder="Enter your comment here..."></textarea>
+     <label for="frontend">
+      <input type="checkbox" name="improve" id="frontend" value="c1" /> 
+      Frond-end Projects 
      </label>
+     <label for="backend">
+      <input type="checkbox" name="improve" id="backend"> Back-end Projects
+     </label>
+     <label for="dataview"> 
+      <input type="checkbox" name="improve" id="dataview"> Data Visualization
+     </label>
+     <label for="challenges">
+      <input type="checkbox" name="improve" id="challenges"> Challenges
+     </label>
+     <label for="openSrcCommunity">
+      <input type="checkbox" name="improve" id="openSrcCommunity"> Open Source Community
+     </label>
+     <label for="gitterHelp">
+      <input type="checkbox" name="improve" id="gitterHelp"> Gitter help rooms
+     </label>
+     <label for="videos">
+      <input type="checkbox" name="improve" id="videos"> Videos
+     </label>
+     <label for="meetups">
+      <input type="checkbox" name="improve" id="meetups"> City Meetups
+     </label>
+     <label for="wiki">
+      <input type="checkbox" name="improve" id="wiki"> Wiki
+     </label>
+     <label for="forum">
+      <input type="checkbox" name="improve" id="forum"> Forum
+     </label>
+     <label for="addCourses">
+      <input type="checkbox" name="improve" id="addCourses"> Additional Courses
+     </label>
+    </label>
+    <label> Any comments or suggestions?
+      <textarea name="comment" id="comment" cols="100" rows="6" placeholder="Enter your comment here..."></textarea>
+    </label>
      <input type="submit" value="Submit">
     </fieldset>
    </form>
